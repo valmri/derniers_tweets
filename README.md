@@ -1,4 +1,5 @@
-# Heroes
+# Derniers tweets
+Projet d'initiation à Angular qui permet de récupérer les tweets d'un compte Twitter.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
 
