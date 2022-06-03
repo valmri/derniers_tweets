@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+$font: 'Courier Prime', monospace;
+
+h1, p {
+    font-family: $font;
+}
+
+h1 {
+    color: #fff;
+}
+
+.feed {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1C1D26;
+}
+
+.tweet {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F4F1F1;
+}
+

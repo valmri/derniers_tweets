@@ -10,7 +10,7 @@ import { map } from 'rxjs';
 })
 export class TweetlistComponent implements OnInit {
 
-  title = "Mes tweets";
+  title = "Derniers tweets";
   resultat:any;
 
   constructor( private http: HttpClient ) { }
@@ -29,7 +29,7 @@ export class TweetlistComponent implements OnInit {
     };
 
     // Requête http
-    this.http.get('/2/users/4387508134/tweets?max_results=10', httpOptions).subscribe(data=> { 
+    this.http.get('/2/users/858982741882351616/tweets?max_results=10', httpOptions).subscribe(data=> { 
       this.resultat = data; 
     });
     

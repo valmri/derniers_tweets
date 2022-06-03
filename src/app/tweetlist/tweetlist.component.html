@@ -1,4 +1,4 @@
-<h1>{{title}}</h1>
 <div class="feed">
-    <p *ngFor="let res of resultat.data">{{ res.text }}</p>
+    <h1>{{title}}</h1>
+    <p *ngFor="let res of resultat.data" class="tweet">{{ res.text }}</p>
 </div>
