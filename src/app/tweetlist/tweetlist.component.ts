@@ -24,7 +24,7 @@ export class TweetlistComponent implements OnInit {
     // Configuration de l'entête
     const httpOptions = {
       headers: new HttpHeaders({
-        'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAAOsgdQEAAAAAFncMIEd0b7JYY0m2rNjzPxErMCQ%3DesWTZIycyfkQHkf7yV5gNn2Rhk6kMnTeoL7eJyjKTyNcx6mLhe'
+        'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAAOsgdQEAAAAA89flIh776MELkIlKi5wTrBcUaWI%3DatqC5p5PGm5NtNWhvoHZoMc7n1BQH1OagJEcWHEW53l80TzuaZ'
       })
     };
 

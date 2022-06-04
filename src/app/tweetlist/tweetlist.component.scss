@@ -3,6 +3,7 @@
 $bgFeed: #1C1D26;
 $sizeFeed: 50%;
 $bgTweet: #F4F1F1;
+$colorTweet: #000;
 $font: 'Courier Prime', monospace;
 $bgDanger: rgb(185, 77, 77);
 
@@ -28,6 +29,7 @@ h1, strong, p {
 }
 
 .tweet {
+    color: $colorTweet;
     background-color: $bgTweet;
 }
 
