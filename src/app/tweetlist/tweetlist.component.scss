@@ -1,26 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
+$bgFeed: #1C1D26;
+$sizeFeed: 50%;
+$bgTweet: #F4F1F1;
 $font: 'Courier Prime', monospace;
+$bgDanger: rgb(185, 77, 77);
 
-h1, p {
+h1, p, strong {
     font-family: $font;
 }
 
-h1 {
+h1, strong, p {
     color: #fff;
+}
+
+.feed,
+.tweet,
+.msgErreur {
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .feed {
     margin: auto;
-    width: 50%;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #1C1D26;
+    width: $sizeFeed;
+    background-color: $bgFeed;
 }
 
 .tweet {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #F4F1F1;
+    background-color: $bgTweet;
 }
 
+.msgErreur {
+    background-color: $bgDanger;
+}

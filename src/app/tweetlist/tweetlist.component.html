@@ -1,4 +1,8 @@
 <div class="feed">
     <h1>{{title}}</h1>
     <p *ngFor="let res of resultat.data" class="tweet">{{ res.text }}</p>
+    <div *ngIf="!resultat" class="msgErreur">
+        <strong>Impossible de récupérer les derniers tweets.</strong>
+        <p>Vérifiez l'existence de votre jeton Bearer ou de l'id du compte Twitter dans la requête HTTP.</p>
+    </div>
 </div>
