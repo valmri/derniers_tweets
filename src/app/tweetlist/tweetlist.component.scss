@@ -7,12 +7,28 @@ $colorTweet: #000;
 $font: 'Courier Prime', monospace;
 $bgDanger: rgb(185, 77, 77);
 
-h1, p, strong {
+h1, p, strong, span {
     font-family: $font;
 }
 
-h1, strong, p {
+h1, strong, p, span {
     color: #fff;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: $bgFeed;
+}
+
+.search > input {
+    padding: 5px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0;
+    cursor: pointer;
 }
 
 .feed,
@@ -31,6 +47,12 @@ h1, strong, p {
 .tweet {
     color: $colorTweet;
     background-color: $bgTweet;
+    margin: 10px 0px;
+}
+
+.tweet > span,
+.tweet > p {
+    color: $colorTweet;
 }
 
 .msgErreur {

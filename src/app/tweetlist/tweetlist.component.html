@@ -1,8 +1,23 @@
+<div class="search">
+    <input #user type="text" (change)="getUser(user)" placeholder="Identifiant du compte @Twitter">
+</div>
 <div class="feed">
-    <h1>{{title}}</h1>
-    <p *ngFor="let res of resultat.data" class="tweet">{{ res.text }}</p>
-    <div *ngIf="!resultat" class="msgErreur">
-        <strong>Impossible de récupérer les derniers tweets.</strong>
-        <p>Vérifiez l'existence de votre jeton Bearer ou de l'id du compte Twitter dans la requête HTTP.</p>
+    <div *ngIf="utilisateur">
+        <h1>Derniers tweets de @{{ utilisateur.data.username }}</h1>
+        <div *ngFor="let res of tweets.data" class="tweet">
+            <span class="date">Publié le {{ res.created_at | date:'shortDate'}}</span>
+            <hr/>
+            <p>{{ res.text }}</p>
+        </div>
+        <div *ngIf="!tweets" class="msgErreur">
+            <strong>Impossible de récupérer les derniers tweets.</strong>
+            <p>Il est possible que ce compte Twitter n'ait pas encore publié de tweets.</p>
+        </div>
     </div>
+
+    <div *ngIf="!utilisateur" class="msgErreur">
+        <strong>Impossible de récupérer le compte Twitter.</strong>
+        <p>Vérifiez l'existence ou la validité de votre jeton Bearer ou de l'identifiant du compte Twitter.</p>
+    </div>
+
 </div>
